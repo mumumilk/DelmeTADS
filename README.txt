@@ -22,3 +22,4 @@ modificando arquivo
 >>>>>>> a86ee548617c1cc58fbd1b2e83f6c01aed617bb5
 >>>>>>> 7d2e0ecd2dabfac369ac31733086e63f4a71bc61
 ...
+teste2
