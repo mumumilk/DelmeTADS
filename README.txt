@@ -23,3 +23,4 @@ modificando arquivo
 >>>>>>> 7d2e0ecd2dabfac369ac31733086e63f4a71bc61
 ...
 teste2
+olamundo
