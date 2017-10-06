@@ -36,6 +36,7 @@ public class Principal extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
+        btBruno = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -68,6 +69,13 @@ public class Principal extends javax.swing.JFrame {
 
         jButton4.setText("Léo");
 
+        btBruno.setText("Bruno");
+        btBruno.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btBrunoActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -75,6 +83,7 @@ public class Principal extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(40, 40, 40)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btBruno)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jButton1)
@@ -105,7 +114,9 @@ public class Principal extends javax.swing.JFrame {
                 .addComponent(jButton3)
                 .addGap(18, 18, 18)
                 .addComponent(jButton4)
-                .addContainerGap(137, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btBruno)
+                .addContainerGap(105, Short.MAX_VALUE))
         );
 
         pack();
@@ -124,6 +135,10 @@ public class Principal extends javax.swing.JFrame {
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         JOptionPane.showConfirmDialog(this, "Olá, Tópicos!");
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void btBrunoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btBrunoActionPerformed
+        lbl1.setText(new Integer(soma3()).toString());
+    }//GEN-LAST:event_btBrunoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -161,6 +176,7 @@ public class Principal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btBruno;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
@@ -169,4 +185,9 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JTextField txt1;
     private javax.swing.JTextField txt2;
     // End of variables declaration//GEN-END:variables
+
+    public Integer soma3() {
+        return Integer.parseInt(txt1.getText()) + Integer.parseInt(txt2.getText()) * 2;
+    }
+
 }
