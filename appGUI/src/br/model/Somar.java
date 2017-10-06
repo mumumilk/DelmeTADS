@@ -15,4 +15,5 @@ public class Somar {
         int y=Integer.parseInt(b);
         return x+y;
     }
+    
 }
