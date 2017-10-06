@@ -58,7 +58,7 @@ public class Principal extends javax.swing.JFrame {
             }
         });
 
-        jButton3.setText("Olá");
+        jButton3.setText("Gabriel");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
